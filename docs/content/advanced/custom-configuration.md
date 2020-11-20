@@ -39,6 +39,10 @@ global configMap is found at
 $PGOROOT/examples/custom-config
 ```
 
+In order to run *create.sh* script, you need to have `$PGO_NAMESPACE` and `$PGO_CMD` variables set in your environment.
+* `PGO_NAMESPACE` should be equal to the namespace where the postgres operator is deployed.
+* `PGO_CMD` should be one of `kubectl` or `oc`.
+
 If you run the *create.sh* script there, it will create the configMap
 that will include the PostgreSQL configuration files within that directory.
 
